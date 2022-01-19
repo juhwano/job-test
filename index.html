@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="juhwano" />
+    <meta name="keywords" content="추천 당신의 직업" />
+    <meta name="description" content="추천 당신의 직업" />
+    <!-- sns share -->
+    <meta property="og:url" content="https://jobtype.netlify.app" />
+    <meta property="og:title" content="추천 당신의 직업" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/img/share.jpg" />
+    <meta property="og:description" content="당신의 직업을 추천해드립니다." />
+    <meta
+      property="og:description"
+      content="당신에게 잘 맞는 직업을 추천해드립니다."
+    />
+    <title>직업 TEST</title>
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/img/favicon.png" type="image/png" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="/assets/img/favicon.png"
+      type="image/png"
+    />
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="/assets/vendor/@fontawesome/fontawesome-free/css/all.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/css/bootstrap/nucleo.css"
+      type="text/css"
+    />
+    <!-- Argon CSS -->
+    <link
+      rel="stylesheet"
+      href="/assets/css/bootstrap/argon.css"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="/assets/css/default.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/qna.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/result.css" type="text/css" />
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+      Kakao.init("2218ae28133d099cab7f118729fe61c5");
+      Kakao.isInitialized();
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <section id="main" class="mx-auto my-4 py-5 px-3">
+        <h1>당신에게 어울리는 직업은?</h1>
+        <div class="col-12 col-xl-6 col-lg-6 col-md-8 col-sm-10 mx-auto">
+          <img src="/assets/img/job.png" class="img-fluid" alt="mainImage" />
+        </div>
+        <p class="mt-2 mb-0 text-center">
+          과연 어떤 직업이 당신에게 잘 맞을까요?
+        </p>
+        <p class="text-center">테스트를 통해 알아보세요</p>
+        <button type="button" class="btn btn-danger mt-3" onclick="js:begin()">
+          테스트 시작
+        </button>
+      </section>
+      <section id="qna">
+        <div class="progress-outer mx-auto mt-5">
+          <div
+            class="progress-bar progress-bar-warning progress-bar-striped active"
+          ></div>
+          <div class="progress-value"></div>
+        </div>
+        <div class="qBox mx-auto my-5 py-3 px-3"></div>
+        <div class="answerBox"></div>
+      </section>
+      <section id="result" class="mx-auto my-5 py-5 px-3">
+        <h1>추천 직업은!</h1>
+        <div class="resultname"></div>
+        <div
+          id="resultImg"
+          class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto mb-2"
+        ></div>
+        <div class="resultDesc mx-2"></div>
+        <div class="resultJob mx-2"></div>
+        <div class="resultFooter">
+          <button
+            type="button"
+            class="btn btn-danger resultBtn my-3"
+            onclick="window.location.href='/'"
+            ;
+          >
+            다시 하기
+          </button>
+          <h3>결과 공유하기</h3>
+          <button
+            type="button"
+            class="btn kakao mt-3 px-4"
+            onclick="js:setShare()"
+          >
+            <img
+              src="/assets/img/kakaotalk.png"
+              class="kakao_share"
+              alt="kakaotalk_share_image"
+            /><span>카카오톡</span>
+          </button>
+          <button type="button" class="btn btn-info resultBtn mt-3">
+            <i class="fas fa-plus mr-1"><span class="ml-1">더 보기</span></i>
+          </button>
+        </div>
+      </section>
+    </div>
+    <!-- JS -->
+    <script src="/assets/js/data.js" charset="utf-8"></script>
+    <script src="/assets/js/function.js" charset="utf-8"></script>
+    <script src="/assets/js/share.js" charset="utf-8"></script>
+  </body>
+</html>
