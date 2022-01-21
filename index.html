@@ -56,21 +56,53 @@
       Kakao.init("2218ae28133d099cab7f118729fe61c5");
       Kakao.isInitialized();
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-F74S31L06J"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-F74S31L06J");
+    </script>
   </head>
   <body>
     <div class="container">
       <section id="main" class="mx-auto my-4 py-5 px-3">
         <h1>당신에게 어울리는 직업은?</h1>
-        <div class="col-12 col-xl-6 col-lg-6 col-md-8 col-sm-10 mx-auto">
+        <div class="col-xl-9 col-lg-8 col-md-6 col-sm-10 mx-auto">
           <img src="/assets/img/job.png" class="img-fluid" alt="mainImage" />
         </div>
         <p class="mt-2 mb-0 text-center">
           과연 어떤 직업이 당신에게 잘 맞을까요?
         </p>
         <p class="text-center">테스트를 통해 알아보세요</p>
-        <button type="button" class="btn btn-danger mt-3" onclick="js:begin()">
+        <button
+          id="startBtn"
+          type="button"
+          class="btn btn-danger my-3"
+          onclick="js:begin()"
+        >
           테스트 시작
         </button>
+        <div class="add col-xl-9 col-lg-8 col-md-8 col-sm-12 col-xs-0 mx-auto">
+          <ins
+            class="kakao_ad_area"
+            style="display: none"
+            data-ad-unit="DAN-eIpKMXDt5yLePByn"
+            data-ad-width="320"
+            data-ad-height="50"
+          ></ins>
+          <script
+            async
+            type="text/javascript"
+            src="//t1.daumcdn.net/kas/static/ba.min.js"
+          ></script>
+        </div>
       </section>
       <section id="qna">
         <div class="progress-outer mx-auto mt-5">
