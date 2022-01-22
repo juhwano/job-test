@@ -107,6 +107,10 @@ function setResult() {
 
   const resultJob = document.querySelector(".resultJob");
   const job_list = infoList[idx].job.split(",");
+  console.log(job_list);
+  let random_job = Math.floor(Math.random() * job_list.length);
+  console.log(random_job);
+  console.log(typeof random_job);
 
   job_list.forEach((element, i) => {
     resultJob.innerHTML += `<li class="job-${i}">${element}</li>`;
@@ -114,19 +118,20 @@ function setResult() {
 
   setTimeout(() => {
     for (let i = 0; i < job_list.length; i++) {
-      document.querySelector(`.job-${i}`).classList.add("is-red");
+      document.querySelector(`.job-${i}`).classList.add("flash");
     }
     setTimeout(() => {
       for (let i = 0; i < job_list.length; i++) {
-        document.querySelector(`.job-${i}`).classList.remove("is-red");
+        document.querySelector(`.job-${i}`).classList.remove("flash");
       }
       setTimeout(() => {
         for (let i = 0; i < job_list.length; i++) {
-          document.querySelector(`.job-${i}`).classList.add("is-red");
+          document.querySelector(`.job-${i}`).classList.add("flash");
         }
         setTimeout(() => {
           for (let i = 0; i < job_list.length; i++) {
-            document.querySelector(`.job-${i}`).classList.remove("is-red");
+            document.querySelector(`.job-${i}`).classList.remove("flash");
+            document.querySelector(`.job-${random_job}`).classList.add("flash");
           }
         }, 1000);
       }, 2000);
