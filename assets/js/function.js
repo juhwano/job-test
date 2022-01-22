@@ -107,10 +107,7 @@ function setResult() {
 
   const resultJob = document.querySelector(".resultJob");
   const job_list = infoList[idx].job.split(",");
-  console.log(job_list);
   let random_job = Math.floor(Math.random() * job_list.length);
-  console.log(random_job);
-  console.log(typeof random_job);
 
   job_list.forEach((element, i) => {
     resultJob.innerHTML += `<li class="job-${i}">${element}</li>`;
