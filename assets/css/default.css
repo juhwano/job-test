@@ -1,0 +1,39 @@
+body {
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  color: #fff;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  height: 690px;
+}
+
+.btn-danger {
+  background-color: #00c362;
+  transition: all 0.3s;
+  border: 0 solid #00c362;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: #fff;
+  color: #00c362;
+  border: 0 solid #00c362;
+}

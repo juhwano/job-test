@@ -1,0 +1,72 @@
+#result {
+  display: none;
+  margin-top: 2rem;
+}
+
+#shareResult {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.resultname {
+  font-size: 26px;
+  font-weight: 800;
+  color: rgba(0, 195, 98, 0.9);
+  word-break: keep-all;
+}
+
+.resultDesc {
+  font-size: 20px;
+  word-break: keep-all;
+}
+
+.kakao {
+  color: #000;
+  background-color: #fee500;
+  border: 0px;
+  width: 60%;
+}
+
+.kakao:hover,
+.kakao:focus {
+  background-color: #000;
+  color: #fee500;
+}
+
+.resultBtn {
+  width: 60%;
+}
+
+.kakao_share {
+  height: 20px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+h5 {
+  color: #fff;
+}
+
+.resultFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ad {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.is-red {
+  color: #dd5c5c;
+}
+
+h1 {
+  text-align: left;
+  border-bottom: 1px solid;
+}
