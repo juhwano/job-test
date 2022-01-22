@@ -55,38 +55,44 @@
     </script>
   </head>
   <body>
-    <section id="shareResult" class="mx-auto my-3">
-      <h1>당신은!</h1>
-      <div class="resultname mb-2">
-        <p>#STORYTELLER #이야기꾼</p>
-      </div>
-      <div id="resultImg" class="mx-auto">
-        <img
-          src="../assets/img/result/image-15.png"
-          alt="15"
-          class="img-fluid"
-        />
-      </div>
-      <div class="resultDesc mx-3 my-3">
-        <p>이야기꾼형인 당신! 따뜻한 감성을 가지고 있는 겸손한 사람이에요.</p>
-      </div>
-      <h1>추천 직업은!</h1>
-      <div class="resultJob mx-3 my-2">
-        <p>
-          안무가, 도예가, 만화가, 빅데이터 분석가, 사육사, 약사, 수의사, 보석
-          세공사
-        </p>
-      </div>
-      <div class="resultFooter">
-        <button
-          type="button"
-          class="btn btn-danger resultBtn my-2"
-          onclick="js:moveHome()"
-          ;
-        >
-          나도 테스트해보기
-        </button>
-      </div>
-    </section>
+    <div class="container">
+      <section id="shareResult" class="mx-auto my-3">
+        <h1>당신은!</h1>
+        <div id="resultImg" class="mx-auto">
+          <img
+            src="../assets/img/result/image-15.png"
+            alt="15"
+            class="img-fluid"
+          />
+        </div>
+        <div class="resultname mb-2">#STORYTELLER #이야기꾼</div>
+        <div class="resultDesc mr-2 my-3">
+          이야기꾼형인 당신! <br />따뜻한 감성을 가지고 있는 겸손한 사람이에요.
+        </div>
+        <h1>추천 직업은!</h1>
+        <div class="resultJob mr-5 my-2">
+          <ul>
+            <li>안무가</li>
+            <li>도예가</li>
+            <li>만화가</li>
+            <li>빅데이터 분석가</li>
+            <li>사육사</li>
+            <li>수의사</li>
+            <li>보석 세공사</li>
+            <li>약사</li>
+          </ul>
+        </div>
+        <div class="resultFooter mr-1">
+          <button
+            type="button"
+            class="btn btn-danger resultBtn my-2"
+            onclick="js:moveHome()"
+            ;
+          >
+            나도 테스트해보기
+          </button>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

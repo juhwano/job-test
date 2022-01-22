@@ -55,38 +55,45 @@
     </script>
   </head>
   <body>
-    <section id="shareResult" class="mx-auto my-3">
-      <h1>당신은!</h1>
-      <div class="resultname mb-2">
-        <p>#NINJA #닌자</p>
-      </div>
-      <div id="resultImg" class="mx-auto">
-        <img
-          src="../assets/img/result/image-14.png"
-          alt="14"
-          class="img-fluid"
-        />
-      </div>
-      <div class="resultDesc mx-3 my-3">
-        <p>닌자형인 당신! 논리적이고 뛰어난 상황적응력을 가진 사람이에요.</p>
-      </div>
-      <h1>추천 직업은!</h1>
-      <div class="resultJob mx-3 my-2">
-        <p>
-          파일럿, 카레이서, 범죄학자, 운동선수, 항공기 정비사, 펀드 매니저,
-          개발자, 엔지니어, 연구원, 응급 구조원
-        </p>
-      </div>
-      <div class="resultFooter">
-        <button
-          type="button"
-          class="btn btn-danger resultBtn my-2"
-          onclick="js:moveHome()"
-          ;
-        >
-          나도 테스트해보기
-        </button>
-      </div>
-    </section>
+    <div class="container">
+      <section id="shareResult" class="mx-auto my-3">
+        <h1>당신은!</h1>
+        <div id="resultImg" class="mx-auto">
+          <img
+            src="../assets/img/result/image-14.png"
+            alt="14"
+            class="img-fluid"
+          />
+        </div>
+        <div class="resultname mb-2">#NINJA #닌자</div>
+        <div class="resultDesc mr-2 my-3">
+          닌자형인 당신! <br />논리적이고 뛰어난 상황적응력을 가진 사람이에요.
+        </div>
+        <h1>추천 직업은!</h1>
+        <div class="resultJob mr-5 my-2">
+          <ul>
+            <li>파일럿</li>
+            <li>카레이서</li>
+            <li>범죄학자</li>
+            <li>운동선수</li>
+            <li>항공기 정비사</li>
+            <li>개발자</li>
+            <li>엔지니어</li>
+            <li>연구원</li>
+            <li>응급 구조원</li>
+          </ul>
+        </div>
+        <div class="resultFooter mr-1">
+          <button
+            type="button"
+            class="btn btn-danger resultBtn my-2"
+            onclick="js:moveHome()"
+            ;
+          >
+            나도 테스트해보기
+          </button>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

@@ -55,41 +55,49 @@
     </script>
   </head>
   <body>
-    <section id="shareResult" class="mx-auto my-3">
-      <h1>당신은!</h1>
-      <div class="resultname mb-2">
-        <p>#WRANGLER #카우보이</p>
-      </div>
-      <div id="resultImg" class="mx-auto">
-        <img
-          src="../assets/img/result/image-12.png"
-          alt="12"
-          class="img-fluid"
-        />
-      </div>
-      <div class="resultDesc mx-3 my-3">
-        <p>
-          카우보이형인 당신! 친구, 운동, 음식 등 모든 분야에서 다양함을 선호하는
-          성격이에요.
-        </p>
-      </div>
-      <h1>추천 직업은!</h1>
-      <div class="resultJob mx-3 my-2">
-        <p>
-          경찰관, 소방관, 군인, 펀드 매니저, 은행원, 기자, 여행 가이드, 건축
-          엔지니어, 외교관, 운동선수, 연예인
-        </p>
-      </div>
-      <div class="resultFooter">
-        <button
-          type="button"
-          class="btn btn-danger resultBtn my-2"
-          onclick="js:moveHome()"
-          ;
-        >
-          나도 테스트해보기
-        </button>
-      </div>
-    </section>
+    <div class="container">
+      <section id="shareResult" class="mx-auto my-3">
+        <h1>당신은!</h1>
+        <div id="resultImg" class="mx-auto">
+          <img
+            src="../assets/img/result/image-12.png"
+            alt="12"
+            class="img-fluid"
+          />
+        </div>
+        <div class="resultname mb-2">#WRANGLER #카우보이</div>
+        <div class="resultDesc mr-2 my-3">
+          카우보이형인 당신! <br />친구, 운동, 음식 등 모든 분야에서 다양함을
+          선호하는 성격이에요.
+        </div>
+        <h1>추천 직업은!</h1>
+        <div class="resultJob mr-5 my-2">
+          <ul>
+            <li>경찰관</li>
+            <li>소방관</li>
+            <li>군인</li>
+            <li>펀드 매니저</li>
+            <li>은행원</li>
+            <li>기자</li>
+            <li>여행 가이드</li>
+            <li>건축가</li>
+            <li>엔지니어</li>
+            <li>외교관</li>
+            <li>운동 선수</li>
+            <li>연예인</li>
+          </ul>
+        </div>
+        <div class="resultFooter mr-1">
+          <button
+            type="button"
+            class="btn btn-danger resultBtn my-2"
+            onclick="js:moveHome()"
+            ;
+          >
+            나도 테스트해보기
+          </button>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

@@ -72,6 +72,20 @@
   </head>
   <body>
     <div class="container">
+      <div id="ad">
+        <ins
+          class="kakao_ad_area"
+          style="display: none"
+          data-ad-unit="DAN-eIpKMXDt5yLePByn"
+          data-ad-width="320"
+          data-ad-height="50"
+        ></ins>
+        <script
+          async
+          type="text/javascript"
+          src="//t1.daumcdn.net/kas/static/ba.min.js"
+        ></script>
+      </div>
       <section id="main" class="mx-auto py-5 px-3">
         <h1 class="mt-5 text-center">당신에게 어울리는 직업은?</h1>
         <!-- <div class="col-xl-9 col-lg-8 col-md-6 col-sm-10 mx-auto">
@@ -105,12 +119,14 @@
         class="mx-auto col-lg-12 col-md-10 col-sm-8 col-xs-6"
       >
         <h1>당신은!</h1>
-        <div class="resultname mb-2"></div>
         <div id="resultImg" class="mx-auto"></div>
-        <div class="resultDesc mx-3 my-3"></div>
+        <div class="resultname mb-2"></div>
+        <div class="resultDesc mr-2 my-3"></div>
         <h1>추천 직업은!</h1>
-        <div class="resultJob mx-3 my-2"></div>
-        <div class="resultFooter">
+        <div class="mr-5 my-2">
+          <ul class="resultJob"></ul>
+        </div>
+        <div class="resultFooter mr-1">
           <button
             type="button"
             class="btn btn-danger resultBtn my-2"
@@ -119,7 +135,7 @@
           >
             다시 하기
           </button>
-          <h3>결과 공유하기</h3>
+          <h5>결과 공유하기</h5>
           <button
             type="button"
             class="btn kakao px-4 my-2"
@@ -136,20 +152,6 @@
           </button>
         </div>
       </section>
-      <div id="ad">
-        <ins
-          class="kakao_ad_area"
-          style="display: none"
-          data-ad-unit="DAN-eIpKMXDt5yLePByn"
-          data-ad-width="320"
-          data-ad-height="50"
-        ></ins>
-        <script
-          async
-          type="text/javascript"
-          src="//t1.daumcdn.net/kas/static/ba.min.js"
-        ></script>
-      </div>
     </div>
     <!-- JS -->
     <script src="/assets/js/data.js" charset="utf-8"></script>

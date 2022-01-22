@@ -55,37 +55,47 @@
     </script>
   </head>
   <body>
-    <section id="shareResult" class="mx-auto my-3">
-      <h1>당신은!</h1>
-      <div class="resultname mb-2">
-        <p>#SUPERHERO #슈퍼 히어로</p>
-      </div>
-      <div id="resultImg" class="mx-auto">
-        <img src="../assets/img/result/image-1.png" alt="1" class="img-fluid" />
-      </div>
-      <div class="resultDesc mx-3 my-3">
-        <p>
-          슈퍼 히어로형인 당신! 친절,현실감을 바탕으로 타인에게 봉사하는
+    <div class="container">
+      <section id="shareResult" class="mx-auto my-3">
+        <h1>당신은!</h1>
+        <div id="resultImg" class="mx-auto">
+          <img
+            src="../assets/img/result/image-1.png"
+            alt="1"
+            class="img-fluid"
+          />
+        </div>
+        <div class="resultname mb-2">#SUPERHERO #슈퍼 히어로</div>
+        <div class="resultDesc mr-2 my-3">
+          슈퍼 히어로형인 당신! <br />친절,현실감을 바탕으로 타인에게 봉사하는
           사람이랍니다.
-        </p>
-      </div>
-      <h1>추천 직업은!</h1>
-      <div class="resultJob mx-3 my-2">
-        <p>
-          아나운서, 기자, MC, 국어 교사, 아동 복지사, CEO, 취업 컨설턴트, 동시
-          통역가, 의사, 종교인
-        </p>
-      </div>
-      <div class="resultFooter">
-        <button
-          type="button"
-          class="btn btn-danger resultBtn my-2"
-          onclick="js:moveHome()"
-          ;
-        >
-          나도 테스트해보기
-        </button>
-      </div>
-    </section>
+        </div>
+        <h1>추천 직업은!</h1>
+        <div class="resultJob mr-5 my-2">
+          <ul>
+            <li>아나운서</li>
+            <li>기자</li>
+            <li>MC</li>
+            <li>국어 교사</li>
+            <li>아동 복지사</li>
+            <li>CEO</li>
+            <li>취업 컨설턴트</li>
+            <li>동시 통역가</li>
+            <li>의사</li>
+            <li>종교인</li>
+          </ul>
+        </div>
+        <div class="resultFooter mr-1">
+          <button
+            type="button"
+            class="btn btn-danger resultBtn my-2"
+            onclick="js:moveHome()"
+            ;
+          >
+            나도 테스트해보기
+          </button>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
