@@ -1,5 +1,13 @@
 const url = "https://jobtype.netlify.app/";
 
+function retry() {
+  location.href = "/index.html";
+  // const resetBtn = document.querySelector("#resetBtn");
+  // resetBtn.addEventListener("click", () => {
+  //   window.location.href = "/";
+  // });
+}
+
 function setShare() {
   let resultImg = document.querySelector("#resultImg");
   let resultAlt = resultImg.firstElementChild.alt;

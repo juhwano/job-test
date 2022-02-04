@@ -71,26 +71,23 @@
     </script>
   </head>
   <body>
+    <div id="ad">
+      <ins
+        class="kakao_ad_area"
+        style="display: none"
+        data-ad-unit="DAN-eIpKMXDt5yLePByn"
+        data-ad-width="320"
+        data-ad-height="50"
+      ></ins>
+      <script
+        async
+        type="text/javascript"
+        src="//t1.daumcdn.net/kas/static/ba.min.js"
+      ></script>
+    </div>
     <div class="container">
-      <div id="ad">
-        <ins
-          class="kakao_ad_area"
-          style="display: none"
-          data-ad-unit="DAN-eIpKMXDt5yLePByn"
-          data-ad-width="320"
-          data-ad-height="50"
-        ></ins>
-        <script
-          async
-          type="text/javascript"
-          src="//t1.daumcdn.net/kas/static/ba.min.js"
-        ></script>
-      </div>
       <section id="main" class="mx-auto py-5 px-3">
         <h1 class="mt-5 text-center">당신에게 어울리는 직업은?</h1>
-        <!-- <div class="col-xl-9 col-lg-8 col-md-6 col-sm-10 mx-auto">
-          <img src="/assets/img/job.png" class="img-fluid" alt="mainImage" />
-        </div> -->
         <p class="mt-2 mb-0 text-center">
           과연 어떤 직업이 당신에게 잘 맞을까요?
         </p>
@@ -104,7 +101,7 @@
           테스트 시작
         </button>
       </section>
-      <section id="qna">
+      <section id="qna" class="py-5">
         <div class="progress-outer mx-auto mt-5">
           <div
             class="progress-bar progress-bar-warning progress-bar-striped active"
@@ -130,11 +127,12 @@
         <div class="resultFooter mr-1">
           <button
             type="button"
+            id="resetBtn"
             class="btn btn-danger resultBtn"
-            onclick="window.location.href='/'"
+            onclick="js:retry()"
             ;
           >
-            <i class="fas fa-redo"><span class="ml-1">다시 하기</span></i>
+            <i class="fas fa-redo"><span class="ml-1">다시하기</span></i>
           </button>
           <button
             type="button"
