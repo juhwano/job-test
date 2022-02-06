@@ -113,27 +113,27 @@ function setResult() {
     resultJob.innerHTML += `<li class="job-${i}">${element}</li>`;
   });
 
-  setTimeout(() => {
-    for (let i = 0; i < job_list.length; i++) {
-      document.querySelector(`.job-${i}`).classList.add("flash");
-    }
-    setTimeout(() => {
-      for (let i = 0; i < job_list.length; i++) {
-        document.querySelector(`.job-${i}`).classList.remove("flash");
-      }
-      setTimeout(() => {
-        for (let i = 0; i < job_list.length; i++) {
-          document.querySelector(`.job-${i}`).classList.add("flash");
-        }
-        setTimeout(() => {
-          for (let i = 0; i < job_list.length; i++) {
-            document.querySelector(`.job-${i}`).classList.remove("flash");
-            document.querySelector(`.job-${random_job}`).classList.add("flash");
-          }
-        }, 1000);
-      }, 2000);
-    }, 3000);
-  }, 4000);
+  // setTimeout(() => {
+  //   for (let i = 0; i < job_list.length; i++) {
+  //     document.querySelector(`.job-${i}`).classList.add("flash");
+  //   }
+  //   setTimeout(() => {
+  //     for (let i = 0; i < job_list.length; i++) {
+  //       document.querySelector(`.job-${i}`).classList.remove("flash");
+  //     }
+  //     setTimeout(() => {
+  //       for (let i = 0; i < job_list.length; i++) {
+  //         document.querySelector(`.job-${i}`).classList.add("flash");
+  //       }
+  //       setTimeout(() => {
+  //         for (let i = 0; i < job_list.length; i++) {
+  //           document.querySelector(`.job-${i}`).classList.remove("flash");
+  //           document.querySelector(`.job-${random_job}`).classList.add("flash");
+  //         }
+  //       }, 1000);
+  //     }, 2000);
+  //   }, 3000);
+  // }, 4000);
 }
 
 function goResult() {
