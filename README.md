@@ -31,5 +31,7 @@
 - 카카오톡 공유하기를 통해 더 많은 사람들과 즐길 수 있게 함.
 - 간단한 UI/UX, 사용자 패턴 제한 설계를 통한 참여율 증가
 
+<br/>
+
 ## ⚡ Trouble shooting
-- 리포지토리 내 이슈 참조
+- [리포지토리 내 이슈 참조](https://github.com/juhwano/job-test/issues)
